@@ -1,0 +1,25 @@
+version: '2'
+services:
+  db:
+    image: postgres:9.6
+    volumes:
+      - zwaterdb:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: zwater
+      POSTGRES_USER: zwater
+    ports:
+      - '5432:5432'
+  app:
+    build: .
+    volumes:
+      - .:/lambda
+    command: python3 /lambda/app/main.py
+    ports:
+      - '80:5000'
+    links:
+      - db
+    depends_on:
+      - db
+
+volumes:
+  zwaterdb:
