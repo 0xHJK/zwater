@@ -20,6 +20,9 @@
       .full-width {
         width: 100%;
       }
+      .addon-width {
+        min-width: 100px;
+      }
     </style>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,88 +34,124 @@
   <body>
     <div class="container">
       <h1 style="text-align:center">水质监测优化反馈系统</h1>
-      <div class="form">
+      <form class="form">
         <div class="row">
-          <div class="col-md-3 col-sm-4">
+          <div class="col-lg-3 col-sm-4">
             <div class="input-group vmg-12">
-              <span class="input-group-addon">A:</span>
-              <input type="text" class="form-control">
+              <span class="input-group-addon addon-width">A_COD:</span>
+              <input id="acod" name="acod" type="text" class="form-control">
             </div>
           </div>
-          <div class="col-md-3 col-sm-4">
+          <div class="col-lg-3 col-sm-4">
             <div class="input-group vmg-12">
-              <span class="input-group-addon">B:</span>
-              <input type="text" class="form-control">
+              <span class="input-group-addon addon-width">O1_COD:</span>
+              <input id="o1cod" name="o1cod" type="text" class="form-control">
             </div>
           </div>
-          <div class="col-md-3 col-sm-4">
+          <div class="col-lg-3 col-sm-4">
             <div class="input-group vmg-12">
-              <span class="input-group-addon">C:</span>
-              <input type="text" class="form-control">
+              <span class="input-group-addon addon-width">O2_COD:</span>
+              <input id="o2cod" name="o2cod" type="text" class="form-control">
             </div>
           </div>
-          <div class="col-md-3 col-sm-4">
+          <div class="col-lg-3 col-sm-4">
             <div class="input-group vmg-12">
-              <span class="input-group-addon">D:</span>
-              <input type="text" class="form-control">
+              <span class="input-group-addon addon-width">O3_COD:</span>
+              <input id="o3cod" name="o3cod" type="text" class="form-control">
             </div>
           </div>
-          <div class="col-md-3 col-sm-4">
+          <div class="col-lg-3 col-sm-4">
             <div class="input-group vmg-12">
-              <span class="input-group-addon">E:</span>
-              <input type="text" class="form-control">
+              <span class="input-group-addon addon-width">O4_COD:</span>
+              <input id="o4cod" name="o4cod" type="text" class="form-control">
             </div>
           </div>
-          <div class="col-md-3 col-sm-4">
+          <div class="col-lg-3 col-sm-4">
             <div class="input-group vmg-12">
-              <span class="input-group-addon">F:</span>
-              <input type="text" class="form-control">
+              <span class="input-group-addon addon-width">A_NH4:</span>
+              <input id="anh4" name="anh4" type="text" class="form-control">
             </div>
           </div>
-          <div class="col-md-3 col-sm-4">
+          <div class="col-lg-3 col-sm-4">
             <div class="input-group vmg-12">
-              <span class="input-group-addon">G:</span>
-              <input type="text" class="form-control">
+              <span class="input-group-addon addon-width">O1_NH4:</span>
+              <input id="o1nh4" name="o1nh4" type="text" class="form-control">
             </div>
           </div>
-          <div class="col-md-3 col-sm-4">
+          <div class="col-lg-3 col-sm-4">
             <div class="input-group vmg-12">
-              <span class="input-group-addon">H:</span>
-              <input type="text" class="form-control">
+              <span class="input-group-addon addon-width">O2_NH4:</span>
+              <input id="o2nh4" name="o2nh4" type="text" class="form-control">
             </div>
           </div>
-          <div class="col-md-3 col-sm-4">
+          <div class="col-lg-3 col-sm-4">
             <div class="input-group vmg-12">
-              <span class="input-group-addon">I:</span>
-              <input type="text" class="form-control">
+              <span class="input-group-addon addon-width">O3_NH4:</span>
+              <input id="o3nh4" name="o3nh4" type="text" class="form-control">
             </div>
           </div>
-          <div class="col-md-3 col-sm-4">
+          <div class="col-lg-3 col-sm-4">
             <div class="input-group vmg-12">
-              <span class="input-group-addon">J:</span>
-              <input type="text" class="form-control">
+              <span class="input-group-addon addon-width">O4_NH4:</span>
+              <input id="o4nh4" name="o4nh4" type="text" class="form-control">
             </div>
           </div>
-          <div class="col-md-3 col-sm-4">
+          <div class="col-lg-3 col-sm-4">
             <div class="input-group vmg-12">
-              <span class="input-group-addon">K:</span>
-              <input type="text" class="form-control">
+              <span class="input-group-addon addon-width">A_NO2:</span>
+              <input id="ano2" name="ano2" type="text" class="form-control">
             </div>
           </div>
-          <div class="col-md-3 col-sm-4">
+          <div class="col-lg-3 col-sm-4">
             <div class="input-group vmg-12">
-              <span class="input-group-addon">L:</span>
-              <input type="text" class="form-control">
+              <span class="input-group-addon addon-width">O1_NO2:</span>
+              <input id="o1no2" name="o1no2" type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-4">
+            <div class="input-group vmg-12">
+              <span class="input-group-addon addon-width">O2_NO2:</span>
+              <input id="o2no2" name="o2no2" type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-4">
+            <div class="input-group vmg-12">
+              <span class="input-group-addon addon-width">O3_NO2:</span>
+              <input id="o3no2" name="o3no2" type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-4">
+            <div class="input-group vmg-12">
+              <span class="input-group-addon addon-width">O4_NO2:</span>
+              <input id="o4no2" name="o4no2" type="text" class="form-control">
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-offset-3 col-md-6 vmg-24">
-            <button type="button" class="btn btn-primary full-width">生成建议</button>
+            <button id="suggest" type="button" class="btn btn-primary full-width">生成建议</button>
           </div>
         </div>
-      </div>
+        <div id="msg" class="alert hide" role="alert">...</div>
+      </form>
     </div>
     <script src="/static/js/jquery.min.js"></script>
+    <script>
+      function suggest(){
+        $.post('/', $("form").serialize(), function(data){
+          $('#msg').removeClass('hide').text(data)
+          if (data == '运行正常'){
+            $('#msg').addClass('alert-success')
+          } else {
+            $('#msg').addClass('alert-warning')
+          }
+        })
+      }
+      $(function(){
+        $('#suggest').click(function(){
+          suggest()
+        })
+      })
+    </script>
   </body>
 </html>
