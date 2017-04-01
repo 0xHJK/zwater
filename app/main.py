@@ -4,6 +4,7 @@
 from flask import Flask, render_template, request
 # from test import UserCtrl, get_users
 from controller import NormCtrl
+from models import Norm
 
 app = Flask(__name__)
 
@@ -22,5 +23,6 @@ def index():
         return msg
 
 if __name__ == "__main__":
+    Norm.create_table(fail_silently = True)
     app.debug = True
     app.run(host = '0.0.0.0')
